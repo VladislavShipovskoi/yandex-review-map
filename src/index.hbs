@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>YaGeo Map</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a246d593-3ba1-46fe-ba2c-b04985fdd0e7&lang=ru_RU"
+        type="text/javascript"></script>
+</head>
+
+<body style="overflow: hidden;">
+    <div id="ymaps"></div>
+    <div id="reviews" class="hidden">
+        <div id="reviews__header">
+            <div id="reviews__close">&#215;</div>
+        </div>
+        <div id="reviews__content">
+        </div>
+        <form id="reviews__form" method="POST">
+            <h3>Ваш отзыв</h3>
+            <input name="name" type="text" placeholder="Ваше имя">
+            <input name="place" type="text" placeholder="Укажите место">
+            <textarea name="comment" placeholder="Поделитесь впечатлениями"></textarea>
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+</body>
+
+</html>
